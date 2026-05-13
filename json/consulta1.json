@@ -1,0 +1,7 @@
+[{"id_videojuego":2,"titulo":"Zelda: Tears of the Kingdom","anio_lanzamiento":2023,"precio":69.99,"desarrollador":"Nintendo","saga":"The Legend of Zelda"}, 
+ {"id_videojuego":3,"titulo":"Elden Ring","anio_lanzamiento":2022,"precio":59.99,"desarrollador":"FromSoftware","saga":"Dark Souls"}, 
+ {"id_videojuego":6,"titulo":"The Last of Us Part II","anio_lanzamiento":2020,"precio":49.99,"desarrollador":"Naughty Dog","saga":"The Last of Us"}, 
+ {"id_videojuego":1,"titulo":"Zelda: Breath of the Wild","anio_lanzamiento":2017,"precio":59.99,"desarrollador":"Nintendo","saga":"The Legend of Zelda"}, 
+ {"id_videojuego":4,"titulo":"Dark Souls III","anio_lanzamiento":2016,"precio":39.99,"desarrollador":"FromSoftware","saga":"Dark Souls"}, 
+ {"id_videojuego":5,"titulo":"The Witcher 3","anio_lanzamiento":2015,"precio":39.99,"desarrollador":"CD Projekt Red","saga":"The Witcher"}, 
+ {"id_videojuego":7,"titulo":"GTA V","anio_lanzamiento":2013,"precio":29.99,"desarrollador":"Rockstar Games","saga":"Grand Theft Auto"}]

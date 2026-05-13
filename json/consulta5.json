@@ -1,0 +1,5 @@
+[{"saga":"The Legend of Zelda","anio_inicio":1986,"total_juegos":2,"precio_total":129.98,"juegos":[{"titulo" : "Zelda: Breath of the Wild", "anio" : 2017}, {"titulo" : "Zelda: Tears of the Kingdom", "anio" : 2023}]}, 
+ {"saga":"Grand Theft Auto","anio_inicio":1997,"total_juegos":1,"precio_total":29.99,"juegos":[{"titulo" : "GTA V", "anio" : 2013}]}, 
+ {"saga":"The Witcher","anio_inicio":2007,"total_juegos":1,"precio_total":39.99,"juegos":[{"titulo" : "The Witcher 3", "anio" : 2015}]}, 
+ {"saga":"Dark Souls","anio_inicio":2011,"total_juegos":2,"precio_total":99.98,"juegos":[{"titulo" : "Elden Ring", "anio" : 2022}, {"titulo" : "Dark Souls III", "anio" : 2016}]}, 
+ {"saga":"The Last of Us","anio_inicio":2013,"total_juegos":1,"precio_total":49.99,"juegos":[{"titulo" : "The Last of Us Part II", "anio" : 2020}]}]

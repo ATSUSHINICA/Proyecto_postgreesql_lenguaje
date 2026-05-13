@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto JSON · Videojuegos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Videojuegos</h1>
+        <p>Datos cargados desde archivos JSON generados en PostgreSQL</p>
+    </header>
+
+    <nav>
+        <button data-json="consulta1.json">Videojuegos</button>
+        <button data-json="consulta2.json">Géneros por juego</button>
+        <button data-json="consulta3.json">Desarrolladores</button>
+        <button data-json="consulta4.json">Juegos en PC</button>
+        <button data-json="consulta5.json">Sagas</button>
+    </nav>
+
+    <section id="herramientas">
+        <input type="text" id="buscador" placeholder="Buscar por título...">
+        <button id="ordenarPrecio">Ordenar por precio</button>
+    </section>
+
+    <main id="contenido">
+        <p>Pulsa un botón para cargar los datos.</p>
+    </main>
+
+    <div id="detalle" class="oculto"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
