@@ -1,0 +1,8 @@
+"datos_json"
+"[{""titulo"":""Dark Souls III"",""precio"":39.99,""generos"":[{""genero"" : ""Acción""}, {""genero"" : ""RPG""}]}, 
+ {""titulo"":""Elden Ring"",""precio"":59.99,""generos"":[{""genero"" : ""Acción""}, {""genero"" : ""RPG""}]}, 
+ {""titulo"":""GTA V"",""precio"":29.99,""generos"":[{""genero"" : ""Acción""}, {""genero"" : ""Mundo Abierto""}]}, 
+ {""titulo"":""The Last of Us Part II"",""precio"":49.99,""generos"":[{""genero"" : ""Acción""}, {""genero"" : ""Terror""}]}, 
+ {""titulo"":""The Witcher 3"",""precio"":39.99,""generos"":[{""genero"" : ""RPG""}, {""genero"" : ""Mundo Abierto""}]}, 
+ {""titulo"":""Zelda: Breath of the Wild"",""precio"":59.99,""generos"":[{""genero"" : ""Acción""}, {""genero"" : ""Aventura""}, {""genero"" : ""Mundo Abierto""}]}, 
+ {""titulo"":""Zelda: Tears of the Kingdom"",""precio"":69.99,""generos"":[{""genero"" : ""Acción""}, {""genero"" : ""Aventura""}, {""genero"" : ""Mundo Abierto""}]}]"

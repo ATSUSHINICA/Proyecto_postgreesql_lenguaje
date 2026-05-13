@@ -1,0 +1,6 @@
+"datos_json"
+"[{""desarrollador"":""FromSoftware"",""pais"":""Japón"",""total_juegos"":2,""precio_medio"":49.99}, 
+ {""desarrollador"":""Nintendo"",""pais"":""Japón"",""total_juegos"":2,""precio_medio"":64.99}, 
+ {""desarrollador"":""Naughty Dog"",""pais"":""Estados Unidos"",""total_juegos"":1,""precio_medio"":49.99}, 
+ {""desarrollador"":""CD Projekt Red"",""pais"":""Polonia"",""total_juegos"":1,""precio_medio"":39.99}, 
+ {""desarrollador"":""Rockstar Games"",""pais"":""Estados Unidos"",""total_juegos"":1,""precio_medio"":29.99}]"
