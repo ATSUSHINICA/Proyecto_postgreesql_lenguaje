@@ -2,159 +2,34 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Videojuegos — LMSGI</title>
+    <title>Proyecto JSON · Videojuegos</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- CABECERA -->
     <header>
-        <div>
-            <h1>🎮 Catálogo de Videojuegos</h1>
-            <p>De PostgreSQL a la Web · Lenguajes de Marcas · 3.ª Evaluación</p>
-        </div>
-        <div style="text-align:right; font-size:0.8rem; color:#a0a0b0;">
-            <div>José Alejandro Díaz Delgado</div>
-            <div>Alejandro Tigreros Grajales</div>
-        </div>
+        <h1>Catálogo de Videojuegos</h1>
+        <p>Datos cargados desde archivos JSON generados en PostgreSQL</p>
     </header>
 
-    <!-- NAVEGACIÓN -->
     <nav>
-        <button data-vista="vista1" class="activo">Videojuegos</button>
-        <button data-vista="vista2">Por género</button>
-        <button data-vista="vista3">Desarrolladores</button>
-        <button data-vista="vista4">PC (Steam)</button>
-        <button data-vista="vista5">Sagas</button>
+        <button data-json="consulta1.json">Videojuegos</button>
+        <button data-json="consulta2.json">Géneros por juego</button>
+        <button data-json="consulta3.json">Desarrolladores</button>
+        <button data-json="consulta4.json">Juegos en PC</button>
+        <button data-json="consulta5.json">Sagas</button>
     </nav>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
+    <section id="herramientas">
+        <input type="text" id="buscador" placeholder="Buscar por título...">
+        <button id="ordenarPrecio">Ordenar por precio</button>
+    </section>
 
-        <!-- ===== CONSULTA 1: todos los videojuegos ===== -->
-        <section id="vista1" class="vista activa">
-            <h2>Todos los videojuegos</h2>
-            <p class="descripcion">
-                Listado completo del catálogo con desarrollador y saga. 
-                Datos obtenidos con <code>json_agg</code> desde PostgreSQL (consulta1.json).
-            </p>
-
-            <div class="filtro">
-                <input type="text" id="filtro1" placeholder="Buscar por título, desarrollador o saga...">
-            </div>
-
-            <div class="tabla-contenedor">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Título</th>
-                            <th>Año</th>
-                            <th>Precio</th>
-                            <th>Desarrollador</th>
-                            <th>Saga</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tabla1-body">
-                        <!-- generado por script.js -->
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- ===== CONSULTA 2: videojuegos con géneros ===== -->
-        <section id="vista2" class="vista">
-            <h2>Videojuegos por género</h2>
-            <p class="descripcion">
-                Cada videojuego con sus géneros agrupados usando la tabla intermedia 
-                <code>videojuego_genero</code> (consulta2.json).
-            </p>
-
-            <div class="filtro">
-                <label for="filtro2-genero" style="font-size:0.85rem; color:#a0a0b0;">Filtrar:</label>
-                <select id="filtro2-genero">
-                    <option value="">— Todos los géneros —</option>
-                    <option value="Acción">Acción</option>
-                    <option value="Aventura">Aventura</option>
-                    <option value="RPG">RPG</option>
-                    <option value="Mundo Abierto">Mundo Abierto</option>
-                    <option value="Terror">Terror</option>
-                </select>
-            </div>
-
-            <div class="tabla-contenedor">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Título</th>
-                            <th>Precio</th>
-                            <th>Géneros</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tabla2-body">
-                        <!-- generado por script.js -->
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- ===== CONSULTA 3: desarrolladores ===== -->
-        <section id="vista3" class="vista">
-            <h2>Desarrolladores</h2>
-            <p class="descripcion">
-                Número de juegos y precio medio por desarrollador usando 
-                <code>COUNT</code> y <code>AVG</code> (consulta3.json).
-            </p>
-
-            <div id="grid-devs" class="grid-tarjetas">
-                <!-- generado por script.js -->
-            </div>
-        </section>
-
-        <!-- ===== CONSULTA 4: juegos en PC Steam ===== -->
-        <section id="vista4" class="vista">
-            <h2>Disponibles en PC (Steam)</h2>
-            <p class="descripcion">
-                Juegos filtrados por plataforma usando la tabla intermedia 
-                <code>videojuego_plataforma</code> con <code>WHERE p.nombre = 'PC (Steam)'</code> (consulta4.json).
-            </p>
-
-            <div class="tabla-contenedor">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Título</th>
-                            <th>Año</th>
-                            <th>Precio</th>
-                            <th>Plataforma</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tabla4-body">
-                        <!-- generado por script.js -->
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- ===== CONSULTA 5: sagas ===== -->
-        <section id="vista5" class="vista">
-            <h2>Sagas</h2>
-            <p class="descripcion">
-                Agrupación de videojuegos por saga con subconsulta <code>json_agg</code> anidada 
-                para listar los títulos de cada una (consulta5.json).
-            </p>
-
-            <div id="lista-sagas">
-                <!-- generado por script.js -->
-            </div>
-        </section>
-
+    <main id="contenido">
+        <p>Pulsa un botón para cargar los datos.</p>
     </main>
 
-    <!-- PIE -->
-    <footer>
-        Trabajo Grupal — Lenguajes de Marcas e Sistemas de Gestión de Información · 2024-2025
-    </footer>
+    <div id="detalle" class="oculto"></div>
 
     <script src="js/script.js"></script>
 </body>
